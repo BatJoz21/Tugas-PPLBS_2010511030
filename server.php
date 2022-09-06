@@ -6,20 +6,6 @@ $namespace = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 $server->configureWSDL('Daftar Barang Toko BatJoz21');
 $server->wsdl->schemaTargetNamespace = $namespace;
 
-// $server->wsdl->addComplexType(
-//     'medicalpatient',
-//     'complexType',
-//     'struct',
-//     'all',
-//     '',
-//     array(
-//         'ID' => array('name' => 'ID', 'type' => 'xsd:string'),
-//         'first_name' => array('name' => 'first_name', 'type' => 'xsd:string'),
-//         'last_name' => array('name' => 'last_name', 'type' => 'xsd:string'),
-//         'birthdate' => array('name' => 'birthdate', 'type' => 'xsd:date'),
-//         'age' => array('name' => 'age', 'type' => 'xsd:number_format'),
-//     ));
-
 function get_intro($name) {
     return "Hello, welcome $name, nice to meet you !!!";
 }
